@@ -25,8 +25,9 @@ const storyData = {
   },
   paranagua: {
     title: "PASSO 3: O Amuleto do Litoral",
-    text: "Em Paranaguá, você encontra um amuleto antigo no Mar de Dentro! As inscrições nele apontam diretamente para o extremo oeste do estado.",
+    text: "Em Paranaguá, você encontra um amuleto antigo no Mar de Dentro! As inscrições nele revelam coordenadas do oeste paranaense.",
     choices: [
+      { text: "Seguir para Cascavel (Procurar pistas no entroncamento do oeste)", nextStep: "cascavel" },
       { text: "Seguir para Foz do Iguaçu (Investigar a névoa das Cataratas)", nextStep: "vitoria" }
     ]
   },
@@ -37,11 +38,24 @@ const storyData = {
   },
   guarapuava: {
     title: "PASSO 3: A Caverna do Centro",
-    text: "Nas florestas de Guarapuava, você descobre uma caverna com inscrições em relevo. O mapa aponta para a fronteira oeste.",
+    text: "Nas florestas de Guarapuava, você descobre uma caverna com inscrições em relevo. O mapa aponta para a região oeste.",
     choices: [
       { text: "Seguir para Maringá (Procurar sob a sombra da catedral)", nextStep: "maringa" },
+      { text: "Seguir para Toledo (Explorar o vale dos rios no oeste)", nextStep: "toledo" },
       { text: "Seguir para Foz do Iguaçu (Investigar a névoa das Cataratas)", nextStep: "vitoria" }
     ]
+  },
+  cascavel: {
+    title: "PASSO 4: O Cruzamento do Oeste",
+    text: "Em Cascavel, no entroncamento das rotas antigas de Peabiru, o amuleto começa a vibrar indicando a direção correta do santuário secreto.",
+    choices: [
+      { text: "Avançar para Foz do Iguaçu (Seguir o sinal em direção às quedas d'água)", nextStep: "vitoria" }
+    ]
+  },
+  toledo: {
+    title: "FIM DE JOGO: O Rio Errado",
+    text: "Você seguiu o curso do rio até Toledo, mas os marcadores indígenas antigos desapareceram na vegetação. A trilha esfriou.",
+    choices: []
   },
   londrina: {
     title: "FIM DE JOGO: Pista Falsa",
